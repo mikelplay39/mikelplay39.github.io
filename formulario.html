@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+</head>
+<body bgcolor="#1a1a2e" text="white">
+    <center>
+        <h1><font color="#e94560">FORMULARIO HOLLOW KNIGHT</font></h1>
+        <h2>Únete a la comunidad</h2>
+    </center>
+    <form actcion="https://formspree.io/f/xrbyljdp" method="POST">
+        <input type="hidden" name="_subject" value="Nuevo registro Hollow Knight">
+        <input type="hidden" name="_replyto" value="@">
+        <input type="text" name="_gotcha" style="display:none">
+        <fieldset>
+            <legend><font color="#e94560"><b>Información Personal</b></font></legend>
+            
+            <p><b>Nombre completo:</b><br>
+            <input type="text" name="nombre" placeholder="Escribe tu nombre" required size="40"></p>
+            
+            <p><b>Correo electrónico:</b><br>
+            <input type="email" name="email" placeholder="ejemplo@correo.com" required size="40"></p>
+            
+            <p><b>Contraseña:</b><br>
+            <input type="password" name="password" placeholder="Mínimo 8 caracteres" required size="40"></p>
+            
+            <p><b>Fecha de nacimiento:</b><br>
+            <input type="date" name="fecha_nacimiento"></p>
+            
+            <p><b>Color favorito:</b><br>
+            <input type="color" name="color_favorito"></p>
+        </fieldset>
+        
+        <br>
+        
+        <fieldset>
+            <legend><font color="#e94560"><b>Preferencias de Hollow Knight</b></font></legend>
+            
+            <p><b>¿Cuál es tu personaje favorito?</b><br>
+            <select name="personaje_favorito">
+                <option value="" disabled selected>Selecciona un personaje</option>
+                <option value="knight">El Caballerito</option>
+                <option value="hornet">Hornet</option>
+                <option value="quirrel">Quirrel</option>
+                <option value="zelote">Zote</option>
+                <option value="cornifer">Cornifer</option>
+            </select></p>
+            
+            <p><b>¿Qué áreas has completado?</b><br>
+            <input type="checkbox" name="areas_dirtmouth" value="si">Bocasucia<br>
+            <input type="checkbox" name="areas_cruces" value="si">Cruces Olvidados<br>
+            <input type="checkbox" name="areas_verdes" value="si">Sendero Verde<br>
+            <input type="checkbox" name="areas_ciudad" value="si">Ciudad de Lágrimas<br>
+            <input type="checkbox" name="areas_nido" value="si">Nido Profundo</p>
+            <p><b>¿Cuál es tu nivel de habilidad?</b><br>
+            <input type="radio" name="habilidad" value="principiante">Principiante<br>
+            <input type="radio" name="habilidad" value="intermedio">Intermedio<br>
+            <input type="radio" name="habilidad" value="avanzado">Avanzado<br>
+            <input type="radio" name="habilidad" value="experto">Ascendente</p>
+            
+            <p><b>Comparte tu experiencia con Hollow Knight:</b><br>
+            <textarea name="experiencia" rows="5" cols="50" placeholder="Cuéntanos sobre tu aventura en Hallownest..."></textarea></p>
+            
+            <p><b>Sube una captura de pantalla de tu juego:</b><br>
+            <input type="file" name="captura"></p>
+            
+            <p><b>¿Recomendarías Hollow Knight a otros?</b><br>
+            <select name="recomendacion">
+                <option value="si">Sí, definitivamente</option>
+                <option value="talvez">Tal vez</option>
+                <option value="no">No</option>
+            </select></p>
+        </fieldset>
+        <p>
+            <input type="reset" value="Limpiar Formulario">
+            &nbsp;&nbsp;&nbsp;
+            <input type="submit" value="Enviar Información">
+        </p>
+    </form>
+    <br>
+    <center>
+        <a href="index.html"><font color="#e94560">Volver a la Página Principal</font></a>
+    </center> 
+</body>
+</html>
